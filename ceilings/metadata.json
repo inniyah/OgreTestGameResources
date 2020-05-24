@@ -1,0 +1,48 @@
+{
+  ":seq_info": {
+    "ceilings": 4
+  },
+  ":type_lists": {
+    "ceilings": {
+      "1": "wooden_beams.obj",
+      "2": "brick.obj",
+      "3": "wood.obj"
+    }
+  },
+  "brick.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 2,
+    "@3DMesh": "brick.mesh",
+    "@3DModel": "brick.obj",
+    "@IsoTile1": "brick_1.iso.png",
+    "@IsoTile2": "brick_2.iso.png",
+    "@IsoTile3": "brick_3.iso.png",
+    "@IsoTile4": "brick_4.iso.png",
+    "@Material": "brick_78af191374572b69c50315961552ab0a523f5c3b.jpg",
+    "@Texture": "brick.jpg"
+  },
+  "wood.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 3,
+    "@3DMesh": "wood.mesh",
+    "@3DModel": "wood.obj",
+    "@IsoTile1": "wood_1.iso.png",
+    "@IsoTile2": "wood_2.iso.png",
+    "@IsoTile3": "wood_3.iso.png",
+    "@IsoTile4": "wood_4.iso.png",
+    "@Material": "wood_5a2d153753229de7e28faf602d83432c84d38524.jpg",
+    "@Texture": "wood.jpg"
+  },
+  "wooden_beams.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 1,
+    "@3DMesh": "wooden_beams.mesh",
+    "@3DModel": "wooden_beams.obj",
+    "@IsoTile1": "wooden_beams_1.iso.png",
+    "@IsoTile2": "wooden_beams_2.iso.png",
+    "@IsoTile3": "wooden_beams_3.iso.png",
+    "@IsoTile4": "wooden_beams_4.iso.png",
+    "@Material": "wooden_beams_48d3865011bae54bf50250f094d55a763f58cc8d.jpg",
+    "@Texture": "wooden_beams.jpg"
+  }
+}

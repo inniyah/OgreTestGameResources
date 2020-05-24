@@ -1,0 +1,87 @@
+{
+  ":seq_info": {
+    "floors": 7
+  },
+  ":type_lists": {
+    "floors": {
+      "1": "BumpyMetal.obj",
+      "2": "simplewall.obj",
+      "3": "terr_rock6.obj",
+      "4": "BeachStones.obj",
+      "5": "MtlPlat2.obj",
+      "6": "grass.obj"
+    }
+  },
+  "BeachStones.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 4,
+    "@3DMesh": "BeachStones.mesh",
+    "@3DModel": "BeachStones.obj",
+    "@IsoTile1": "BeachStones_1.iso.png",
+    "@IsoTile2": "BeachStones_2.iso.png",
+    "@IsoTile3": "BeachStones_3.iso.png",
+    "@IsoTile4": "BeachStones_4.iso.png",
+    "@Material": "BeachStones_d1e564fad14626caad2dc21a8d440e65bba718be.png",
+    "@Texture": "BeachStones.png"
+  },
+  "BumpyMetal.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 1,
+    "@3DMesh": "BumpyMetal.mesh",
+    "@3DModel": "BumpyMetal.obj",
+    "@IsoTile1": "BumpyMetal_1.iso.png",
+    "@IsoTile2": "BumpyMetal_2.iso.png",
+    "@IsoTile3": "BumpyMetal_3.iso.png",
+    "@IsoTile4": "BumpyMetal_4.iso.png",
+    "@Material": "BumpyMetal_dc3319293428be8372001c62ca1cfff26afd39e2.png",
+    "@Texture": "BumpyMetal.png"
+  },
+  "MtlPlat2.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 5,
+    "@3DMesh": "MtlPlat2.mesh",
+    "@3DModel": "MtlPlat2.obj",
+    "@IsoTile1": "MtlPlat2_1.iso.png",
+    "@IsoTile2": "MtlPlat2_2.iso.png",
+    "@IsoTile3": "MtlPlat2_3.iso.png",
+    "@IsoTile4": "MtlPlat2_4.iso.png",
+    "@Material": "MtlPlat2_586188d9bcd9e5b964142956490f87d7a32c6bd3.png",
+    "@Texture": "MtlPlat2.png"
+  },
+  "grass.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 6,
+    "@3DMesh": "grass.mesh",
+    "@3DModel": "grass.obj",
+    "@IsoTile1": "grass_1.iso.png",
+    "@IsoTile2": "grass_2.iso.png",
+    "@IsoTile3": "grass_3.iso.png",
+    "@IsoTile4": "grass_4.iso.png",
+    "@Material": "grass_f8d081b29769640ab9aaabcb9489486c007c39b1.jpg",
+    "@Texture": "grass.jpg"
+  },
+  "simplewall.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 2,
+    "@3DMesh": "simplewall.mesh",
+    "@3DModel": "simplewall.obj",
+    "@IsoTile1": "simplewall_1.iso.png",
+    "@IsoTile2": "simplewall_2.iso.png",
+    "@IsoTile3": "simplewall_3.iso.png",
+    "@IsoTile4": "simplewall_4.iso.png",
+    "@Material": "simplewall_cb440ca9dd1bf8a43a2b772fde590286a2b302b1.png",
+    "@Texture": "simplewall.png"
+  },
+  "terr_rock6.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 3,
+    "@3DMesh": "terr_rock6.mesh",
+    "@3DModel": "terr_rock6.obj",
+    "@IsoTile1": "terr_rock6_1.iso.png",
+    "@IsoTile2": "terr_rock6_2.iso.png",
+    "@IsoTile3": "terr_rock6_3.iso.png",
+    "@IsoTile4": "terr_rock6_4.iso.png",
+    "@Material": "terr_rock6_640e6056342216ae18553f8ba4a1c1b52124c32c.png",
+    "@Texture": "terr_rock6.png"
+  }
+}

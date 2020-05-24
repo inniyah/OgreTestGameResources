@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="isometric" renderorder="right-down" width="50" height="50" tilewidth="128" tileheight="74" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" source="floors.tsx"/>
+ <tileset firstgid="46" source="ceilings.tsx"/>
+ <tileset firstgid="67" source="models.tsx"/>
+ <tileset firstgid="248" source="stairs.tsx"/>
+ <tileset firstgid="533" source="columns.tsx"/>
+ <layer id="2" name="Suelo 01" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKHL8/0DLsdAwVVTVVVVVVVVVVXV5w8OUJo4
+  </data>
+ </layer>
+ <layer id="1" name="Objetos 01" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0DsOgzAQBUA7HSXnoQyfIkchx0lJyUFxjYQoADm2ZqQtdqv3NgQAAAAAAHjWEkP4xdwprltTh28FPUoRK/l1c9Djk+7vgjq2B1nndO9K6vHKneAetfQAAM5Nu33MkgL+07Db+zQbl8AE1w==
+  </data>
+ </layer>
+ <layer id="3" name="Techos 01" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzwENAAAIwzCs4d8UBhBwSJtMwKoAAAAAAAAAAIBEvXSRjyyfPwZe4gZa
+  </data>
+ </layer>
+ <layer id="4" name="Suelo 02" width="50" height="50" offsetx="0" offsety="-148">
+  <data encoding="base64" compression="zlib">
+   eJztz0ENAAAIxDDe+BeMAQQcpE0mYFUAAAAAAAAAAECiXrrIR5bPHwO5dwD7
+  </data>
+ </layer>
+ <layer id="5" name="Objetos 02" width="50" height="50" offsetx="0" offsety="-148">
+  <data encoding="base64" compression="zlib">
+   eJzt0j0OQEAQxfFZSqUbiNIxfNSUOkpXUyqVLuaVItEQWTb/XzLZTPfeZswAAAAAAAAAAHjX6swW5zvFc5s6zAH0wDdMuqUxgHvq1KEPoMeftIf/TiOzQnuuiSN/me5wypspd6J34IYAALhUnfbSSwrgm+rT3mh27D4Gxg==
+  </data>
+ </layer>
+ <layer id="6" name="Techos 02" width="50" height="50" offsetx="0" offsety="-148">
+  <data encoding="base64" compression="zlib">
+   eJztzwENAAAIwzB04V8YBhBwSJtMwKoAAAAAAAAAAIBEvXSRjyyfPwZFLwWr
+  </data>
+ </layer>
+</map>
