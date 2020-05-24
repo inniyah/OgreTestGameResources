@@ -60,7 +60,7 @@ if __name__ == "__main__":
                                 attrs_data = { }
 
                             try:
-                                new_attrs_data = json_data[os.path.splitext(obj_filename)[0]]
+                                new_attrs_data = json_data[os.path.basename(os.path.splitext(obj_filename)[0])]
                             except KeyError:
                                 new_attrs_data = { }
 

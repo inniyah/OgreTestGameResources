@@ -41,6 +41,13 @@ build-stairs: TinyRenderer/TinyRenderer OgreAssimp/OgreAssimpConverter
 build-columns: TinyRenderer/TinyRenderer OgreAssimp/OgreAssimpConverter
 	$(MAKE) -C columns
 
+update:
+	$(MAKE) -C models $@
+	$(MAKE) -C floors $@
+	$(MAKE) -C ceilings $@
+	$(MAKE) -C stairs $@
+	$(MAKE) -C columns $@
+
 up:
 	$(MAKE) -C models $@
 	$(MAKE) -C floors $@

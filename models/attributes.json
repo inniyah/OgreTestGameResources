@@ -1,77 +1,67 @@
 {
   "": {
-    "Type": "Model",
+    "Collision": "NP",
+    "Type": "Model"
+  },
+  "caution": {
     "Collision": "NP"
   },
-  "models/caution": {
-  "Collision": "NP"
+  "colmn": {
+    "Collision": "NP"
   },
-  "models/colmn": {
-  "Collision": "NP"
+  "escalera01": {
+    "Collision": "E1"
   },
-  "models/escalera01": {
-  "Collision": "E1"
+  "escalera02": {
+    "Collision": "E2"
   },
-  "models/escalera02": {
-  "Collision": "E2"
+  "escalera03": {
+    "Collision": "E3"
   },
-  "models/escalera03": {
-  "Collision": "E3"
+  "escalera04": {
+    "Collision": "E4"
   },
-  "models/escalera04": {
-  "Collision": "E4"
+  "hwall_corner": {
+    "Collision": "NP"
   },
-  "models/hwall_solid": {
-  "Collision": "NP"
+  "hwall_cross": {
+    "Collision": "NP"
   },
-  "models/hwall_corner": {
-  "Collision": "NP"
-  },  
-  "models/hwall_cross": {
-  "Collision": "NP"
+  "hwall_fork": {
+    "Collision": "NP"
   },
-  "models/hwall_fork": {
-  "Collision": "NP"
+  "hwall_halfdoor": {
+    "Collision": "NP"
   },
-  "models/hwall_fork": {
-  "Collision": "NP"
+  "hwall_solid": {
+    "Collision": "NP"
   },
-  "models/hwall_halfdoor": {
-  "Collision": "NP"
+  "hwall_straight": {
+    "Collision": "NP"
   },
-  "models/hwall_solid": {
-  "Collision": "NP"
+  "wall": {},
+  "wall_big4": {
+    "Collision": "NP"
   },
-  "models/hwall_straight": {
-  "Collision": "NP"
+  "wall_buttress": {
+    "Collision": "NP"
   },
-  "models/wall_big4": {
-  "Collision": "NP"
+  "wall_buttress_top": {
+    "Collision": "NP"
   },
-  "models/wall_buttress": {
-  "Collision": "NP"
+  "wall_column": {
+    "Collision": "NP"
   },
-  "models/wall_buttress_top": {
-  "Collision": "NP"
+  "wall_diagonal": {
+    "Collision": "NP"
   },
-  "models/wall_column": {
-  "Collision": "NP"
+  "wall_engaged": {
+    "Collision": "NP"
   },
-  "models/wall_diagonal": {
-  "Collision": "NP"
+  "wall_small4": {
+    "Collision": "NP"
   },
-  "models/wall_engaged": {
-  "Collision": "NP"
-  },
-  "models/wall_small4": {
-  "Collision": "NP"
-  },
-  "models/wall_small4_half": {
-  "Collision": "NP"
+  "wall_small4_half": {
+    "Collision": "NP"
   }
-  
-
-
-
-  
 }

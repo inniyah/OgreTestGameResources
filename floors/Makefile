@@ -106,6 +106,9 @@ up: $(OBJ_SOURCES:.obj=.up.png)
 ../$(TILES_ID).tsx: $(ISO_TILES) metadata.json
 	../scripts/generate_tsx.py -d metadata.json -i . -o .. -n "$(TILES_ID)"
 
+update: $(OBJ_SOURCES)
+	../scripts/update_attributes.py -J attributes.json -P '*.obj'
+
 clean:
 	@rm -fv `find . -maxdepth 1 -name "*.obj"`
 	@rm -fv `find . -maxdepth 1 -name "*.mtl"`
@@ -119,4 +122,4 @@ clean:
 	@rm -fv `find . -maxdepth 1 -name "*.tsx"`
 	@rm -fv `find . -maxdepth 1 -name "tmp_*.png"`
 
-.PHONY: all add-new-objs up clean
+.PHONY: all add-new-objs up update clean
