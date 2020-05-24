@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
             for file in glob.glob(args.pattern):
                 id = os.path.basename(os.path.splitext(file)[0])
-                print(id)
+                #~ print(id)
                 try:
                     current_json[id]
                 except KeyError:
