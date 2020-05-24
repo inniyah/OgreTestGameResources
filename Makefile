@@ -1,5 +1,25 @@
 all: build-models build-floors build-ceilings build-stairs build-columns
 
+DESTDIR ?= resources
+
+install: all
+	mkdir -p "$(DESTDIR)/models"
+	cp -v `find models floors ceilings stairs columns -iname '*.mesh'` \
+		"$(DESTDIR)/models"
+
+	mkdir -p "$(DESTDIR)/materials"
+	cp -v `find materials models floors ceilings stairs columns -iname '*.material'` \
+		"$(DESTDIR)/materials"
+
+	mkdir -p "$(DESTDIR)/textures"
+	cp -v `find materials floors ceilings -type f \( \( -iname "*.png" -or -iname "*.jpg" \) -and -not \( -iname "*.iso.png" -or -iname "*.up.png" \) \)` \
+		"$(DESTDIR)/textures"
+
+	mkdir -p "$(DESTDIR)/tiled"
+	tar cf - `find materials models floors ceilings stairs columns -iname '*.iso.png'` | \
+		tar xvf - -C "$(DESTDIR)/tiled"
+	cp -v *.tsx "$(DESTDIR)/tiled"
+
 TinyRenderer/TinyRenderer: TinyRenderer/Makefile
 	$(MAKE) -C TinyRenderer
 
@@ -30,7 +50,8 @@ up:
 
 clean:
 	@rm -rf tmp/
-	@rm -rf *.log
+	@rm -f *.log
+	@rm -f *.tsx
 	@rm -fv `find . -name "*.bak"`
 	@rm -fv `find . -name "*~"`
 	@rm -fv `find tiled -name "*.tsx"`

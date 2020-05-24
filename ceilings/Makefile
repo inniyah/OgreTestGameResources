@@ -5,7 +5,7 @@ TILES_ID := $(lastword $(subst /, ,$(MKFILE_DIR)))
 
 OPACITY = 0.7
 
-CEILING_PNG_SOURCES = $(shell find . -maxdepth 1 -name "*.png" | grep -v ".iso.png$$")
+CEILING_PNG_SOURCES = $(shell find . -maxdepth 1 -name "*.png" | grep -v ".iso.png$$" | grep -v ".up.png$$")
 CEILING_JPG_SOURCES = $(shell find . -maxdepth 1 -name "*.jpg")
 
 OBJ_SOURCES = $(CEILING_PNG_SOURCES:.png=.obj) $(CEILING_JPG_SOURCES:.jpg=.obj)
@@ -16,7 +16,7 @@ ISO_TILES = \
 	$(OBJ_SOURCES:.obj=_4.iso.png) \
 	$(OBJ_SOURCES:.obj=.mesh)
 
-all: $(OBJ_SOURCES) $(ISO_TILES) ../tiled/$(TILES_ID).tsx
+all: $(OBJ_SOURCES) $(ISO_TILES) ../$(TILES_ID).tsx
 
 add-new-objs:
 	ls *.png *.jpg | grep -v ".iso.png$$" | cut -f1 -d'.' | sort --unique | while read -r F; do \
@@ -91,9 +91,8 @@ up: $(OBJ_SOURCES:.obj=.up.png)
 	convert +append $+ $@
 	optipng $@
 
-../tiled/$(TILES_ID).tsx: $(ISO_TILES) metadata.json
-	mkdir -p ../tiled
-	../scripts/generate_tsx.py -d metadata.json -i . -o ../tiled -n "$(TILES_ID)"
+../$(TILES_ID).tsx: $(ISO_TILES) metadata.json
+	../scripts/generate_tsx.py -d metadata.json -i . -o .. -n "$(TILES_ID)"
 
 clean:
 	@rm -fv `find . -maxdepth 1 -name "*.obj"`

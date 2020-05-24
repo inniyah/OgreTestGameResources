@@ -46,6 +46,9 @@ if __name__ == "__main__":
                 tile_id_num = int(tile_id)
                 tile_info = all_info[obj_filename]
 
+                if not os.path.exists(obj_filename):
+                    continue
+
                 if ":attrs_file" in tile_info.keys():
                     try:
                         with open(tile_info[":attrs_file"]) as json_file:

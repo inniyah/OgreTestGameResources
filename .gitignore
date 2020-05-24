@@ -3,12 +3,13 @@
 *.o
 *.pyc
 __pycache__
-tiled/*.tsx
+*.tsx
 *.mesh.xml
 *.mesh
 *.skeleton.xml
 *.skeleton
 *.iso.png
+*.up.png
 ceilings/*.obj
 ceilings/*.mtl
 ceilings/*.material
@@ -19,4 +20,5 @@ OgreAssimp/OgreAssimpConverter
 TinyRenderer/TinyRenderer
 Pinocchio/AttachWeights
 Pinocchio/PinocchioDemo
+resources/*
 .depend

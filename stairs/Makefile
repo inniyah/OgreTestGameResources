@@ -14,7 +14,7 @@ ISO_TILES = \
 
 OPACITY = 0.75
 
-all: $(ISO_TILES) ../tiled/$(TILES_ID).tsx
+all: $(ISO_TILES) ../$(TILES_ID).tsx
 
 add-new-objs:
 	ls *.obj | sort --unique | while read -r F; do \
@@ -80,9 +80,8 @@ up: $(OBJ_SOURCES:.obj=.up.png)
 	convert +append $+ $@
 	optipng $@
 
-../tiled/$(TILES_ID).tsx: $(ISO_TILES) metadata.json
-	mkdir -p ../tiled
-	../scripts/generate_tsx.py -d metadata.json -i . -o ../tiled -n "$(TILES_ID)"
+../$(TILES_ID).tsx: $(ISO_TILES) metadata.json
+	../scripts/generate_tsx.py -d metadata.json -i . -o .. -n "$(TILES_ID)"
 
 clean:
 	@rm -fv `find . -maxdepth 1 -name "*.iso.png"`
