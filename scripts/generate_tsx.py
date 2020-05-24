@@ -7,7 +7,6 @@ import sys
 import os
 
 from data_db import get_obj_info, update_obj_info, get_all_info
-from obj_loader import ObjLoader
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
