@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="isometric" renderorder="right-down" width="200" height="200" tilewidth="137" tileheight="79" infinite="0" nextlayerid="20" nextobjectid="1">
+ <tileset firstgid="1" source="./floors.tsx"/>
+ <tileset firstgid="46" source="./ceilings.tsx"/>
+ <tileset firstgid="67" source="./models.tsx"/>
+ <tileset firstgid="248" source="./stairs.tsx"/>
+ <tileset firstgid="533" source="./columns.tsx"/>
+ <group id="16" name="Planta 01">
+  <layer id="2" name="Suelo 01" width="200" height="200">
+   <properties>
+    <property name="level" type="int" value="0"/>
+    <property name="tipo" value="f"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJzt102Kg1AQhdGih28p2f8Ce9A0IYEbzJ9VJmdwcCY+uR/iqapOAAAAAAAAAAAAAAAAAAAAAAAAADDIz5Xu54EprtvQCJzpAzJ9QKYPyPTBt7u1+619aIdPlPb/rO5zwSvoAzJ9wG3agEwfkOkDLr3rv0MrHN1ebWiEI9IHZPqA27TBt7p3p3s2oSE6PbLbvfrwnaGbPiDTB2Sf1IdueMSr9zxd9/vmWLr3qg8m696rPpise6/6YLLuveqDybr3qg8m696rPpise6/6YLLuveqDybr3qg8m696rPpise6/6YLLuveqDybr3qg8m696rPpise6/6YLLuveqDybr3qg8m696rPpise6/6YLLuveqDT9K9b3tnsu4e9MF03U1ogyPQBWT6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/I9AGZPiDTB2T6gEwfkOkDMn1Apg/IVukDklX6gGSVPiBZpQ9IVukDkrWBPvhWq97bgT44slX6gGSVPiBZ9bfX/6s+4GyVPiBZpQ9IVukDklX7dqEPjmRtcO/2t9yz+9wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXPoFX4Fn0g==
+  </data>
+  </layer>
+  <layer id="1" name="Objetos 01" width="200" height="200">
+   <properties>
+    <property name="level" type="int" value="0"/>
+    <property name="tipo" value="w"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJzt3E1u3DYYBmAlB8kysS+QE3idttdo1kFXQVZBVkGAdtfuWju+TNpcqRIwCgyCH0XNcH44eh6AiKPRjCSAr8mPxHgYAAAAAAAAAAAAAAAAAAAAAAAAAOByfB3bXdIeznpHcBnmbNw/OfY4yAhM0mzM5ozAlpUyIB9snXxATD7YunR96iE5Hsmda32La/O0Bp/r7rshrs2HhXPV7lyTtC9P/buUi1TufPngWrSeDy3Ny6AnLff7cvuJ0LtWfVrtwbWpmQ+9fp7/Ocf6Fb1L12NbzofSdS1ZoTe1mSiNFUvjyMR8ix6dss/KB7051bzHWi89qqkRauZPuXOOWdvAoXLf9yuNF61rhFIm1t4btJbrn0sZaJ2P0mtr7w1aivra2nzsO7/aJ4fywam0ykfr65dekw9a+jc4Vlovmuf5ufceOx+H3FvuGET+G/I17tJ6UbpmlbbUIfOr1vf2bflW4Idcf/6loj9H59W+99ifnzvP3Iu1ttRntvSstLGlPrOlZ6WNLfWZLT0rh5vr8zfJXP1FZu5+yLGb8dirQt0Qvd7yPn5+rj7nMt2OffNlIR9LrwMAANcht6aTq3d7E9XnAADAddt3fxDO6VT75/vuD9o/59y2tKazpWeljS31mS09K21sqc9s6VlpI9dnfsrM52uPHdsh9yYfrLH0/fPS98vnn/et7WvOiWrsQ5r6nDW+rzw29bFfnw3D38/O8/t4uuY/47X/enL9tc8AxzL1yd/HvvnnmfIxeTte+48zXh8i6d/PObWav/EDl+Bc+YBLd+jee8059sDpmfEDYvIBMfmAmHxAnvocLo/xA2LyATH5gJh80AP1OZRZ34WYfEBMPiAmH5CnPocy4wfE5ANi8gEx+YA89TmUGT8gJh8Qkw+IyQfkqc+hzO9yiMkHxOQDYvIBeepzKLO+CzH5gJh8QEw+IE99DmXGD4jJB8TkA2LyAXnqcygzfkBMPiAmHxCTD8hTn0OZ8QNi8gEx+YDY3a59GdunsX0Y22+71252tcKritpjlr7n3djej+3j2D4/uR5curk+r2m1aj9PfU4PShl43B1/uWL8uN2NH/cL14Me7DNGtLge9EA+IHaX/Budk9boUx2eO7bU9+WDXsz1+TAs5yOtQaY6I3esNh/qc3pQk4/W1zN+0Av5gNip+6p80Iva/cHc/vnXsT1kPnOu0e0Pcg2+L/x/2iPM7Q/m6vP5eLo3uHQNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOJX/ATwP3BE=
+  </data>
+  </layer>
+  <layer id="3" name="Techos 01" width="200" height="200">
+   <properties>
+    <property name="level" type="int" value="0"/>
+    <property name="tipo" value="c"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+  </layer>
+ </group>
+ <group id="15" name="Planta 02">
+  <layer id="4" name="Suelo 02" width="200" height="200" offsetx="0" offsety="-158">
+   <properties>
+    <property name="level" type="int" value="1"/>
+    <property name="tipo" value="f"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwGcR4AAQ==
+  </data>
+  </layer>
+  <layer id="12" name="Objetos 02" width="200" height="200" offsetx="0" offsety="-158">
+   <properties>
+    <property name="level" type="int" value="1"/>
+    <property name="tipo" value="w"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJzt3U+O0zAUB+AMhwBxAf5cghVHYsmSJcdAGsEOdrCDswBzDRKJSBD5OYmSOk78fVI0aqvWtvR+dV+iabsOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/vc6cdSi5rlxfUO9fZjcd9/VUYc1z402RLVWQw3WPDfaUHMN1jw3ruNX5r65Gkw999a2zO2I+XJev7t0jzse08/3o/uZ5+3lFnP7ueP8uL5UPT99VHwaRfjsxVot1UxLa2UfLdVMS2tlHy3VTEtrZbuxP3886Tde7dx/vOhf73nmNece34v+nBq97Gv/Wab+5x4HAACuIXVOZ+/+vBbOXwEAwPXVcn0Q1ih1/byW64Oun7NWS+d0Wlor+2ipZlpaK/toqWZaWiv7SNXMk4v2yvLBGnP/f77kKG3rfPXnrPGw8r6hxj7edd33u+Py8aMf+9s/469dA9zKUJOf+9r8emA+PvVjfzlofMiZfn9OaUu+4wdqcFQ+oHZjb1+aHpuzsH9ATD4gJh8Qkw9I059DfewfEJMPiMkHxOSDM9CfQ57zuxCTD4jJB8TkA9L055Bn/4CYfEBMPiAmH5CmP4c8+wfE5ANi8gEx+YC0qD9P/Tbbkt9rW/o8/Tln4b0cYvIBMfmAmHxAmv4c8pzfhZh8QEw+ICYfkKY/hzz7B8TkA2LyATH5gDT9OeTZPyAmHxCTD4jJB6TpzyHP/gEx+YCYfEBMPiBt7M/f/P0bHWvlXmscS3/OGQy1+rYr955ecizYaqjVd125mi05Fmw11Or7rlzNlhwLttrSZ2wZD2o39udH5EN/zhnYPyAmHxCTD0ib9h8lrg/qPziTh5nbZxkDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlvgDlymRJg==
+  </data>
+  </layer>
+  <layer id="6" name="Techos 02" width="200" height="200" offsetx="0" offsety="-158">
+   <properties>
+    <property name="level" type="int" value="1"/>
+    <property name="tipo" value="c"/>
+   </properties>
+   <data encoding="base64" compression="zlib">
+   eJzt08EJAEAIBDE7s/+urGA58OHnEpgSpgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAa/0IfuYPyPwBmT8g8wdk/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJ0BgvYL0Q==
+  </data>
+  </layer>
+ </group>
+</map>
