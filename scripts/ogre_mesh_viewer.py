@@ -235,13 +235,53 @@ class MeshViewer(OgreBites.ApplicationContext, OgreBites.InputListener):
             self.entity.getSubEntities()[highlight].setMaterial(self.highlight_mat)
             self.highlighted = highlight
 
+        if self.entity.hasSkeleton() and OgreOverlay.CollapsingHeader("Skeleton"):
+            OgreOverlay.Text(f"Name: {mesh.getSkeletonName()}")
+            skeleton = mesh.getSkeleton()
+            OgreOverlay.Text(f"Number of Bones: {skeleton.getNumBones()}")
+
+            #~ for bone in skeleton.getRootBones():
+            #~     OgreOverlay.Text(f"RootBone: {bone.getName()}")
+
+            #~ for bone in skeleton.getBones():
+            #~     parent = bone.getParent()
+            #~     if parent:
+            #~         OgreOverlay.Text(f"Bone: {bone.getName()} ({bone.getParent().getName()})")
+            #~     else:
+            #~         OgreOverlay.Text(f"Bone: {bone.getName()}")
+
+            for bone in skeleton.getBones():
+                bone_parent = bone.getParent()
+                if bone_parent:
+                    bone_name = f"Bone: {bone.getName()} ({bone_parent.getName()})"
+                else:
+                    bone_name = f"Bone: {bone.getName()}"
+
+                bone_position = bone.getPosition()
+                bone_orientation = bone.getOrientation()
+                bone_scale = bone.getScale()
+
+                if OgreOverlay.TreeNode(bone_name):
+                    OgreOverlay.Text(f"Position: {bone_position}")
+                    OgreOverlay.Text(f"Orientation: {bone_orientation}")
+                    OgreOverlay.Text(f"Scale: {bone_scale}")
+                    #~ if OgreOverlay.Button("Reset"):
+                    #~     pass
+                    #~ changed = False
+                    #~ OgreOverlay.SameLine()
+                    #~ changed, value = OgreOverlay.SliderFloat("", bone_position[0], 0, 10, "%.3f")
+                    #~ if changed:
+                    #~     bone_position.x = value
+                    #~     bone.setPosition(bone_position)
+                    OgreOverlay.TreePop()
+
         animations = self.entity.getAllAnimationStates()
         if animations is not None and OgreOverlay.CollapsingHeader("Animations"):
             controller_mgr = Ogre.ControllerManager.getSingleton()
 
-            if self.entity.hasSkeleton():
-                OgreOverlay.Text("Skeleton: {}".format(mesh.getSkeletonName()))
-                # self.entity.setUpdateBoundingBoxFromSkeleton(True)
+            #~ if self.entity.hasSkeleton():
+            #~     OgreOverlay.Text("Skeleton: {}".format(mesh.getSkeletonName()))
+            #~     # self.entity.setUpdateBoundingBoxFromSkeleton(True)
             if mesh.hasVertexAnimation():
                 OgreOverlay.Text("Vertex Animations")
 
@@ -273,6 +313,10 @@ class MeshViewer(OgreBites.ApplicationContext, OgreBites.InputListener):
             c = bounds.getCenter()
             OgreOverlay.BulletText("Center: {:.2f}, {:.2f}, {:.2f}".format(c[0], c[1], c[2]))
             OgreOverlay.BulletText("Radius: {:.2f}".format(mesh.getBoundingSphereRadius()))
+
+        if OgreOverlay.CollapsingHeader("Levels of Detail"):
+            OgreOverlay.BulletText(f"Number of Levels: {mesh.getNumLodLevels()}")
+            OgreOverlay.BulletText(f"Manual LOD Level: {'true' if mesh.hasManualLodLevel() else 'false'}")
 
         OgreOverlay.End()
 
