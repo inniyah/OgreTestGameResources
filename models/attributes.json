@@ -38,7 +38,9 @@
   "hwall_straight": {
     "Collision": "NP"
   },
-  "wall": {},
+  "wall": {
+  "Collision": "NP"
+  },
   "wall_big4": {
     "Collision": "NP"
   },

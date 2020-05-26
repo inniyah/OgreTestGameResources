@@ -1,10 +1,10 @@
 {
-  "wall_big4": {},
-  "wall_column": {},
-  "wall_column_small": {},
-  "wall_engaged": {},
-  "wall_small4": {},
-  "wall_small4_base": {},
-  "wall_small4_base_half": {},
-  "wall_small4_half": {}
+  "wall_big4": {"Collision": "NP"},
+  "wall_column": {"Collision": "NP"},
+  "wall_column_small": {"Collision": "NP"},
+  "wall_engaged": {"Collision": "NP"},
+  "wall_small4": {"Collision": "NP"},
+  "wall_small4_base": {"Collision": "NP"},
+  "wall_small4_base_half": {"Collision": "NP"},
+  "wall_small4_half": {"Collision": "NP"}
 }
