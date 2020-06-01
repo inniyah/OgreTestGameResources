@@ -1,6 +1,6 @@
 {
   ":seq_info": {
-    "models": 24
+    "models": 25
   },
   ":type_lists": {
     "models": {
@@ -20,6 +20,7 @@
       "21": "wall_buttress_top.obj",
       "22": "wall_column_small.obj",
       "23": "wall_small4_base.obj",
+      "24": "wall_curved_in.obj",
       "3": "hwall_straight.obj",
       "4": "hwall_cross.obj",
       "5": "hwall_fork.obj",
@@ -226,6 +227,17 @@
     "@IsoTile3": "wall_column_small_3.iso.png",
     "@IsoTile4": "wall_column_small_4.iso.png",
     "@Material": "Material/None"
+  },
+  "wall_curved_in.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 24,
+    "@3DMesh": "wall_curved_in.mesh",
+    "@3DModel": "wall_curved_in.obj",
+    "@IsoTile1": "wall_curved_in_1.iso.png",
+    "@IsoTile2": "wall_curved_in_2.iso.png",
+    "@IsoTile3": "wall_curved_in_3.iso.png",
+    "@IsoTile4": "wall_curved_in_4.iso.png",
+    "@Material": "Material/RockyWall"
   },
   "wall_diagonal.obj": {
     ":attrs_file": "./attributes.json",
