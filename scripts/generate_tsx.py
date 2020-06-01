@@ -78,9 +78,12 @@ if __name__ == "__main__":
 
                     print(f' <tile id="{tile_id_base + tile_id_multiplier * (tile_id_num - 1) + tile_id_inc}">', file=file_output)
                     print(f'  <properties>', file=file_output)
-                    print(f'   <property name="3DModel" value="{tile_info["@3DModel"]}"/>', file=file_output)
-                    print(f'   <property name="3DMesh" value="{os.path.basename(tile_info["@3DMesh"])}"/>', file=file_output)
-                    print(f'   <property name="Material" value="{os.path.basename(tile_info["@Material"])}"/>', file=file_output)
+                    try: print(f'   <property name="3DModel" value="{tile_info["@3DModel"]}"/>', file=file_output)
+                    except KeyError: print(f"@3DModel not found for '{obj_filename}' ({tile_id}): {attrs_data}"); raise
+                    try: print(f'   <property name="3DMesh" value="{os.path.basename(tile_info["@3DMesh"])}"/>', file=file_output)
+                    except KeyError: print(f"@3DMesh not found for '{obj_filename}' ({tile_id}): {attrs_data}"); raise
+                    try: print(f'   <property name="Material" value="{os.path.basename(tile_info["@Material"])}"/>', file=file_output)
+                    except KeyError: print(f"@Material not found for '{obj_filename}' ({tile_id}): {attrs_data}"); raise
                     print(f'   <property name="RotAngle" value="{rot_angle}"/>', file=file_output)
 
                     try:

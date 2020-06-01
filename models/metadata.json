@@ -1,6 +1,6 @@
 {
   ":seq_info": {
-    "models": 25
+    "models": 28
   },
   ":type_lists": {
     "models": {
@@ -21,6 +21,9 @@
       "22": "wall_column_small.obj",
       "23": "wall_small4_base.obj",
       "24": "wall_curved_in.obj",
+      "25": "wall_curved_big_in.obj",
+      "26": "wall_curved_big_in_s1.obj",
+      "27": "wall_curved_big_in_s2.obj",
       "3": "hwall_straight.obj",
       "4": "hwall_cross.obj",
       "5": "hwall_fork.obj",
@@ -227,6 +230,39 @@
     "@IsoTile3": "wall_column_small_3.iso.png",
     "@IsoTile4": "wall_column_small_4.iso.png",
     "@Material": "Material/None"
+  },
+  "wall_curved_big_in.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 25,
+    "@3DMesh": "wall_curved_big_in.mesh",
+    "@3DModel": "wall_curved_big_in.obj",
+    "@IsoTile1": "wall_curved_big_in_1.iso.png",
+    "@IsoTile2": "wall_curved_big_in_2.iso.png",
+    "@IsoTile3": "wall_curved_big_in_3.iso.png",
+    "@IsoTile4": "wall_curved_big_in_4.iso.png",
+    "@Material": "Material/RockyWall"
+  },
+  "wall_curved_big_in_s1.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 26,
+    "@3DMesh": "wall_curved_big_in_s1.mesh",
+    "@3DModel": "wall_curved_big_in_s1.obj",
+    "@IsoTile1": "wall_curved_big_in_s1_1.iso.png",
+    "@IsoTile2": "wall_curved_big_in_s1_2.iso.png",
+    "@IsoTile3": "wall_curved_big_in_s1_3.iso.png",
+    "@IsoTile4": "wall_curved_big_in_s1_4.iso.png",
+    "@Material": "Material/RockyWall"
+  },
+  "wall_curved_big_in_s2.obj": {
+    ":attrs_file": "./attributes.json",
+    ":seq_id": 27,
+    "@3DMesh": "wall_curved_big_in_s2.mesh",
+    "@3DModel": "wall_curved_big_in_s2.obj",
+    "@IsoTile1": "wall_curved_big_in_s2_1.iso.png",
+    "@IsoTile2": "wall_curved_big_in_s2_2.iso.png",
+    "@IsoTile3": "wall_curved_big_in_s2_3.iso.png",
+    "@IsoTile4": "wall_curved_big_in_s2_4.iso.png",
+    "@Material": "Material/RockyWall"
   },
   "wall_curved_in.obj": {
     ":attrs_file": "./attributes.json",
