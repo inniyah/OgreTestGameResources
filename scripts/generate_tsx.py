@@ -76,6 +76,9 @@ if __name__ == "__main__":
                     (3, "@IsoTile4", 270),
                 ]:
 
+                    ref_angle = attrs_data.get('RefAngle', 0)
+                    ref_angle = (ref_angle + rot_angle) % 360;
+
                     print(f' <tile id="{tile_id_base + tile_id_multiplier * (tile_id_num - 1) + tile_id_inc}">', file=file_output)
                     print(f'  <properties>', file=file_output)
                     try: print(f'   <property name="3DModel" value="{tile_info["@3DModel"]}"/>', file=file_output)
@@ -85,6 +88,7 @@ if __name__ == "__main__":
                     try: print(f'   <property name="Material" value="{os.path.basename(tile_info["@Material"])}"/>', file=file_output)
                     except KeyError: print(f"@Material not found for '{obj_filename}' ({tile_id}): {attrs_data}"); raise
                     print(f'   <property name="RotAngle" value="{rot_angle}"/>', file=file_output)
+                    print(f'   <property name="RefAngle" value="{ref_angle}"/>', file=file_output)
 
                     try:
                         print(f'   <property name="Texture" value="{tile_info["@Texture"]}"/>', file=file_output)
@@ -92,7 +96,8 @@ if __name__ == "__main__":
                         pass
 
                     for pname, pvalue in attrs_data.items():
-                        print(f'   <property name="{pname}" value="{pvalue}"/>', file=file_output)
+                        if pname not in ['RotAngle', 'RefAngle', '3DModel', '3DMesh', 'Material']:
+                            print(f'   <property name="{pname}" value="{pvalue}"/>', file=file_output)
 
                     print(f'  </properties>', file=file_output)
                     print(f'  <image source="{os.path.relpath(args.input, args.output)}/{tile_info[json_label]}" width="128" height="224"/>', file=file_output)
