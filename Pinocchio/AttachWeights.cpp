@@ -250,9 +250,10 @@ void dumpObj(std::string filename, const Mesh & m, const Skeleton & skeleton, co
     for (int i = 1; i < (int)o.embedding.size(); ++i) {
         const Vector3 & lf = o.embedding[skeleton.fPrev()[i]];
         const Vector3 & lt = o.embedding[i];
+        float llen = sqrt((lt[0] - lf[0]) * (lt[0] - lf[0]) + (lt[1] - lf[1]) * (lt[1] - lf[1]) + (lt[2] - lf[2]) * (lt[2] - lf[2]));
         std::cout << "Skeleton Line Segment ("
             << skeleton.getNameForJoint(skeleton.fPrev()[i]) << " - " << skeleton.getNameForJoint(i) << "): "
-            << lf << " - " << lt << std::endl;
+            << lf << " - " << lt << " (len = " << llen << ")" << std::endl;
         os << "v " << lf[0] << " " << lf[1] << " " << lf[2] << std::endl;
         os << "v " << lt[0] << " " << lt[1] << " " << lt[2] << std::endl;
         os << "l " << (num) << " " << (num+1) << std::endl;
